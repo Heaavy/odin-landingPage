@@ -15,9 +15,15 @@ a {
     text-decoration: none;
     color: #E5E7EB;
 }
-.navBar, .headerLogo {
+
+a:hover {
+    color: #e5e7eb10;
+}
+
+.navigation {
+    background-color: #1F2937;
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -26,10 +32,10 @@ a {
 } 
 
 .header {
-    background-color: #1F2937;
+    width: 1050px;
     padding: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .headerLogo {
@@ -38,14 +44,26 @@ a {
     font-weight: 900;
 }
 
-.container {
+.containerDiv {
     background-color: #1F2937;
     display: flex;
-    align-items: center;
-    padding: 10px;
-    height: 550px;
+    justify-content: center;
 }
 
+.container {
+    width: 1050px;
+    padding: 0px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-self: center;
+}
 
 .tittle {
     font-size: 48px;
@@ -53,27 +71,58 @@ a {
     color: #F9FAF8;
 }
 
+.button,
+.button2 {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: block;
+    text-align: center;
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button {
+    border: none;
+}
+
+.button2 {
+    border: 2px solid white;
+    margin: auto;
+}
+
+.button:hover,
+.button2:hover {
+    background-color: #6fa6ff ;
+}
+
 .containerText {
     font-size: 18px;
     color:#E5E7EB;
-    display: flex;
 }
 
 .tittleText {
+    max-width: 400px;
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .containerMain {
     display: flex;
     flex-direction: column;
-
+    width: 1050px;
+    margin:0 auto;
+    align-items: center;
 }
 
 .mainText {
-    align-self: center;
     margin:30px 0px 30px 0px;
-    color:#1F2937
+    color:#1F2937;
 }
 
 .icon1, 
@@ -90,4 +139,71 @@ a {
     padding: 16px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 1050px;
+}
+
+.icon-text {
+    text-align: center;
+    flex-direction: column;
+    max-width: 150px;
+}
+
+.inspirational-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    text-align:justify;
+}
+
+.inspirational {
+    display: flex;
+    flex-direction: row;
+    background-color: #E5E7EB;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.inspiring-quote {
+    width: 900px;
+    height: 300px;
+    text-align: justify;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.author {
+    font-weight: bold;
+    text-align: end;
+}
+
+.call-to-action {
+    width: 800px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #3882F6;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-text {
+    color:#F9FAF8;
+    margin: auto;
+}
+
+.action {
+    margin: 60px;
+}
+
+.footer {
+    background-color: #1F2937;
+    height: 40px;
+    color:#E5E7EB;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copy-text {
+    margin: auto;
 }
